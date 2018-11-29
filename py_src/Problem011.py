@@ -24,4 +24,6 @@ print(length)
 print(list1)
 print(list1[0])
 
+# какое-то изменение)
+
 
