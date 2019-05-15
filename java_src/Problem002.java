@@ -2,14 +2,7 @@ class Problem002
 {
 	public static void main(String[] args) {
 		
-		/*int sum=0;
 		
-			while (sum<4000000000) {
-			  sum+=1 ;
-			  if ((sum%2)==0) {
-				System.out.println("Сумма четных чисел Фибоначчи : " + sum);
-				}
-			}  */
 
 		int n0 = 1;
 		int n1 = 1;
