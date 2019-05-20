@@ -1,0 +1,128 @@
+[33mcommit 82be7bbc278229b2953caa818ef33e8722ad18a8[m[33m ([m[1;36mHEAD -> [m[1;32m20190516_Euler_Problem_018[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/add_tasks_upto_21[m[33m, [m[1;31morigin/20190516_Euler_Problem_018[m[33m, [m[1;32mmaster[m[33m, [m[1;32madd_tasks_upto_21[m[33m)[m
+Author: Alex Shu <alexandra.velikaya@yahoo.com>
+Date:   Wed May 15 22:13:07 2019 +0300
+
+    add files in pack
+
+[1mdiff --git a/java_src/Problem002.java b/java_src/Problem002.java[m
+[1mindex 27c7ab1..6a0c2d4 100644[m
+[1m--- a/java_src/Problem002.java[m
+[1m+++ b/java_src/Problem002.java[m
+[36m@@ -2,14 +2,7 @@[m [mclass Problem002[m
+ {[m
+ 	public static void main(String[] args) {[m
+ 		[m
+[31m-		/*int sum=0;[m
+ 		[m
+[31m-			while (sum<4000000000) {[m
+[31m-			  sum+=1 ;[m
+[31m-			  if ((sum%2)==0) {[m
+[31m-				System.out.println("Сумма четных чисел Фибоначчи : " + sum);[m
+[31m-				}[m
+[31m-			}  */[m
+ [m
+ 		int n0 = 1;[m
+ 		int n1 = 1;[m
+[1mdiff --git a/py_src/.idea/codeStyles/codeStyleConfig.xml b/py_src/.idea/codeStyles/codeStyleConfig.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a55e7a1[m
+[1m--- /dev/null[m
+[1m+++ b/py_src/.idea/codeStyles/codeStyleConfig.xml[m
+[36m@@ -0,0 +1,5 @@[m
+[32m+[m[32m<component name="ProjectCodeStyleConfiguration">[m
+[32m+[m[32m  <state>[m
+[32m+[m[32m    <option name="PREFERRED_PROJECT_CODE_STYLE" value="Default" />[m
+[32m+[m[32m  </state>[m
+[32m+[m[32m</component>[m
+\ No newline at end of file[m
+[1mdiff --git a/py_src/.idea/inspectionProfiles/Project_Default.xml b/py_src/.idea/inspectionProfiles/Project_Default.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..d4e3d0a[m
+[1m--- /dev/null[m
+[1m+++ b/py_src/.idea/inspectionProfiles/Project_Default.xml[m
+[36m@@ -0,0 +1,12 @@[m
+[32m+[m[32m<component name="InspectionProjectProfileManager">[m
+[32m+[m[32m  <profile version="1.0">[m
+[32m+[m[32m    <option name="myName" value="Project Default" />[m
+[32m+[m[32m    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">[m
+[32m+[m[32m      <option name="ignoredErrors">[m
+[32m+[m[32m        <list>[m
+[32m+[m[32m          <option value="W191" />[m
+[32m+[m[32m        </list>[m
+[32m+[m[32m      </option>[m
+[32m+[m[32m    </inspection_tool>[m
+[32m+[m[32m  </profile>[m
+[32m+[m[32m</component>[m
+\ No newline at end of file[m
+[1mdiff --git a/py_src/.idea/misc.xml b/py_src/.idea/misc.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1c3ca5a[m
+[1m--- /dev/null[m
+[1m+++ b/py_src/.idea/misc.xml[m
+[36m@@ -0,0 +1,7 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<project version="4">[m
+[32m+[m[32m  <component name="JavaScriptSettings">[m
+[32m+[m[32m    <option name="languageLevel" value="ES6" />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.7 (test_proj1)" project-jdk-type="Python SDK" />[m
+[32m+[m[32m</project>[m
+\ No newline at end of file[m
+[1mdiff --git a/py_src/.idea/modules.xml b/py_src/.idea/modules.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..bd427b7[m
+[1m--- /dev/null[m
+[1m+++ b/py_src/.idea/modules.xml[m
+[36m@@ -0,0 +1,8 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<project version="4">[m
+[32m+[m[32m  <component name="ProjectModuleManager">[m
+[32m+[m[32m    <modules>[m
+[32m+[m[32m      <module fileurl="file://$PROJECT_DIR$/.idea/py_src.iml" filepath="$PROJECT_DIR$/.idea/py_src.iml" />[m
+[32m+[m[32m    </modules>[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m</project>[m
+\ No newline at end of file[m
+[1mdiff --git a/py_src/.idea/py_src.iml b/py_src/.idea/py_src.iml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..6711606[m
+[1m--- /dev/null[m
+[1m+++ b/py_src/.idea/py_src.iml[m
+[36m@@ -0,0 +1,11 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<module type="PYTHON_MODULE" version="4">[m
+[32m+[m[32m  <component name="NewModuleRootManager">[m
+[32m+[m[32m    <content url="file://$MODULE_DIR$" />[m
+[32m+[m[32m    <orderEntry type="inheritedJdk" />[m
+[32m+[m[32m    <orderEntry type="sourceFolder" forTests="false" />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="TestRunnerService">[m
+[32m+[m[32m    <option name="PROJECT_TEST_RUNNER" value="Unittests" />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m</module>[m
+\ No newline at end of file[m
+[1mdiff --git a/py_src/.idea/workspace.xml b/py_src/.idea/workspace.xml[m
+[1mnew file mode 100644[m
+[1mindex 0000000..361bbc4[m
+[1m--- /dev/null[m
+[1m+++ b/py_src/.idea/workspace.xml[m
+[36m@@ -0,0 +1,788 @@[m
+[32m+[m[32m<?xml version="1.0" encoding="UTF-8"?>[m
+[32m+[m[32m<project version="4">[m
+[32m+[m[32m  <component name="ChangeListManager">[m
+[32m+[m[32m    <list default="true" id="cadc38e1-1e2f-41ef-9eca-8e6bacd6eec3" name="Default" comment="" />[m
+[32m+[m[32m    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />[m
+[32m+[m[32m    <option name="TRACKING_ENABLED" value="true" />[m
+[32m+[m[32m    <option name="SHOW_DIALOG" value="false" />[m
+[32m+[m[32m    <option name="HIGHLIGHT_CONFLICTS" value="true" />[m
+[32m+[m[32m    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />[m
+[32m+[m[32m    <option name="LAST_RESOLUTION" value="IGNORE" />[m
+[32m+[m[32m  </component>[m
+[32m+[m[32m  <component name="CoverageDataManager">[m
+[32m+[m[32m    <SUITE FILE_PATH="coverage/py_src$Problem018.coverage" NAME="Problem018 Coverage Results" MODIFIED="1557838007937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />[m
+[32m+[m[32m    <SUITE FILE_PATH="coverage/py_src$Problem012.coverage" NAME="Problem012 Coverage Results" MODIFIED="1556053002525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />[m
+[32m+[m[32m    <SUITE FILE_PATH="coverage/py_src$Unittests_for_Problem007_test_PrimeNumbersTest_testFindPrimeNumber.coverage" NAME="Unittests for Problem007_test.PrimeNumbersTest.testFindPrimeNumber Coverage Results" MODIFIED="1556040633922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />[m
+[32m+[m[32m    <SUITE FILE_PATH="coverage/py_src$Problem021.coverage" NAME="Problem021 Coverage Results" MODIFIED="1555965154084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />[m
+[32m+[m[32m    <SUITE FILE_PATH="coverage/py_src$Unittests_for_Problem021_test_AmicableNumbersTest_testFindDivisors2.coverage" NAME="Unittests for Problem021_test.AmicableNumbersTest.testFindDivisors2 Coverage Results" MODIFIED="1556040164780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />[m
+[32m+[m[32m    <SUITE FILE_PATH="coverage/py_src$Problem003.coverage" NAME="Problem003 Coverage Results" MODIFIED="1556026835107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />[m
+[32m+[m[32m    <SUITE FILE_PATH="coverage/py_src$Unittests_for_Problem017_test_NumbersIntoWordsTest_testHowManyLetters.coverage" NAME="Unittests for Problem017_test.NumbersIntoWordsTest.testHowManyLetters Coverage Results" MODIFIED="1556040763593" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_E
