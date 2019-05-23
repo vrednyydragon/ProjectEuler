@@ -7,50 +7,48 @@
 # So, COLIN would obtain a score of 938 × 53 = 49714.
 # What is the total of all the name scores in the file?
 
+
 class NamesScores():
 
-	def SortingNames(self, input_data):
-		names_txt = input_data
+	def SortingNames(self, input_data1, input_data2):
+		names_txt = input_data1
+		numb_name_for_test = input_data2
+		sum_letter_name = 0
+		sum_of_names = 0
 		file_names = open(names_txt, 'r')
-		print('1')
-		#print(len(file_names))
-		#print(file_names.read())
-		len_file_names = len(file_names.read())
-		print(len_file_names)
-
-		print(3)
+		# print('1')
+		names1 = file_names.read().replace("\"", "") #str()
+		# print(names1)
+		#list_names = ' '.join(sorted(names1.split(','))).split()
+		list_names = sorted(names1.split(','))
+		print(list_names)
+		len_list_names = len(list_names)
+		print(len_list_names)
+		print('Tестовое имя по номеру ' + str(numb_name_for_test)+ ": "
+		      + str(list_names[numb_name_for_test-1]))
+		for i in range(len_list_names):
+			# print("Порядковый номер имени: " + str(i+1) + ". Имя: " + str(list_names[i])
+			#       + '. Длина имени: ' + str(len(list_names[i])))
+			print(str(i+1) + ' - ' + str(list_names[i]))
+			sum_letter_name = 0
+			for k in list_names[i]:
+				# print(str(k) + ' - ' + str(ord(k)-64))
+				# # по ASCII A - 65, нужно отнять -64 чтобы получить А - 1
+				sum_letter_name += ord(k) - 64
+			print('Сумма букв имени - ' + str(sum_letter_name))
+			print(sum_letter_name * (i+1))
+			sum_of_names += (sum_letter_name * (i+1))
+			# # для теста, это правильно выводится но... нужно отдельно это сделать для теста
+			# # возможно функцией
+			# if i+1 == numb_name_for_test:
+			# 	print(str(i+1) + ' - ' + str(list_names[i]) + ' сумма имени - ' +
+			# 	      str(sum_letter_name) + ", сумма имени умноженая на номер -" +
+			# 	      str(sum_letter_name * (i+1)))
+		print("Сумма всех имен в файле - " + str(sum_of_names))
 		file_names.close()
-		file_names = open(names_txt, 'r')
-		print(file_names.read())
-
-
-
-		# # этот метод не работает:
-		# print(file_names.readlines())
-		# for line in file_names:
-		# 	print(line)
-
-		# # это работает
-		with open(names_txt) as file_handler:
-			print(file_names.read())
-			print('2')
-			for line in file_handler:
-				print(line)
-
-		print(file_names.read())
-		file_names.close()
-
-
-		# file_names1=0
-		# with open(names_txt, 'r') as f:
-		# 	file_names1 = f.read()
-		# 	file_names2 = f.read()
-		# 	print(file_names1)
-		# 	print(file_names2)
-		#
-
+		return sum_of_names
 
 if __name__ == "__main__":
 	n = NamesScores()
 	## print(n.SortingNames(938))
-	print(n.SortingNames('names.txt'))
+	print(n.SortingNames('names.txt', 938))
