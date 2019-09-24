@@ -29,7 +29,8 @@ class Problem059():
 		flag = True
 		right_key, encrypted_text = '', ''
 		sum_of_scii = 0
-		code_txt = open(file, 'r').read().split(",") 
+		file_txt = open(file, 'r')
+		code_txt = file_txt.read().split(",") 
 		# logger.info(str(code_txt))
 		passwrd = self.Pass()
 		xorRez = 0
@@ -65,6 +66,7 @@ class Problem059():
 					logger.info("right key : {}, encrypted text: {} ".format(right_key, encrypted_text))
 		for x in encrypted_text:
 			sum_of_scii += ord(x)
+		file_txt.close()
 		return sum_of_scii
 
 if __name__ == "__main__":
