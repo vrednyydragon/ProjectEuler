@@ -1,0 +1,4 @@
+.java linguist-detectable=true
+.python linguist-detectable=true
+.bash linguist-detectable=true
+.js linguist-detectable=true

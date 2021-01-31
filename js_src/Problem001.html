@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                document.querySelector('#new-task').onsubmit = () => {
+                    var lim_numb = document.querySelector('#task').value;
+                    var sum_ = 0
+                    for (let i = 0; i < lim_numb; i++) { 
+                        // alert(i);
+                        if (i%3 == 0 || i%5 == 0){
+                            // alert(i);
+                            sum_ += i
+                        }
+                    }
+                    // alert(sum_);
+                    // document.querySelector('#result').append(sum_);
+                    document.querySelector('#result').innerText = sum_;
+                    // Clear input field
+                    document.querySelector('#task').value = '';
+                    return false;
+                };
+
+            });
+        </script>
+        <title>Tasks</title>
+    </head>
+    <body>
+        <h1>Tasks</h1>
+        <form id="new-task">
+            <input id="task"  type="number" autocomplete="off" autofocus placeholder="New Task">
+            <input type="submit">
+        </form>
+        <div id="result">
+        </div>
+    </body>
+</html>
